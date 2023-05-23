@@ -1,8 +1,10 @@
 
-# Yazboz App
+# e-Yazboz App
 
 Indispensable for gaming tables. See the winner of the game on your phone without the hassle of pen and paper and calculations.
 After entering the player names and the game name, it remains only to enter the total numbers in each game.
+
+[Appstore](https://apps.apple.com/app/e-yazboz/id6449440315)
 
 ![App Design Plan Brainstorm Classroom Worksheet](https://github.com/anlavc/e-Yazboz/assets/50744756/4a20b5e1-edde-4ba9-b07f-f153dd8cfa09)
 
