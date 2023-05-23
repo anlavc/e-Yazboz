@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleGameInfoVC" customModule="Yazboz" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar1" destination="ga2-10-zYA" id="5SU-9R-Dgp"/>
+                <outlet property="avatar2" destination="o9S-DH-MFR" id="Ocr-sf-lfi"/>
+                <outlet property="avatar3" destination="5s2-OG-tTJ" id="PEj-4N-Q4x"/>
+                <outlet property="avatar4" destination="nO1-q1-Svp" id="XPf-ak-FfS"/>
+                <outlet property="gameNameTextField" destination="qng-aO-RId" id="L9s-2i-s4I"/>
+                <outlet property="player1TextField" destination="SL5-bf-GoY" id="nBx-WS-eJs"/>
+                <outlet property="player2TextField" destination="ZMe-nM-jBX" id="lbO-AO-g48"/>
+                <outlet property="player3TextField" destination="zq6-Ui-Jaf" id="S2t-Md-v44"/>
+                <outlet property="player4TextField" destination="YtK-Lf-MLm" id="Gsb-20-zIF"/>
+                <outlet property="playerStack3" destination="qjm-kE-e5d" id="CoB-lE-ffH"/>
+                <outlet property="playerStack4" destination="eNd-ms-TcG" id="ALi-gV-K9f"/>
+                <outlet property="scrollView" destination="qQy-NK-Zjc" id="UO4-xY-sZV"/>
+                <outlet property="segmentedControl" destination="GqA-jO-W3i" id="tHL-yR-m4r"/>
+                <outlet property="startButton" destination="d1p-Zc-3od" id="8bM-Ug-F7x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="SingleGameInfoVC" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQy-NK-Zjc">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-ZI-vQC">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-YY-pap">
+                                    <rect key="frame" x="30" y="50" width="333" height="423"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-9R-F1Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="31"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GqA-jO-W3i">
+                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="32"/>
+                                                    <color key="backgroundColor" name="butonColor"/>
+                                                    <segments>
+                                                        <segment title="Tek"/>
+                                                        <segment title="Eşli"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="segmentedControlTapped:" destination="-1" eventType="valueChanged" id="rNM-W0-E85"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a0g-kl-VhS" userLabel="oyuncu adı">
+                                            <rect key="frame" x="0.0" y="61" width="333" height="215"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CE1-Ut-myk" userLabel="playerStack1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_1" translatesAutoresizingMaskIntoConstraints="NO" id="ga2-10-zYA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="Wls-9A-SYc"/>
+                                                                <constraint firstAttribute="height" constant="50" id="sSJ-BU-1bg"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YtW-tB-4MO" userLabel="PLAYER 1">
+                                                            <rect key="frame" x="60" y="0.0" width="273" height="50"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Oyuncu Adı 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SL5-bf-GoY">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="45"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIC-gZ-eT0">
+                                                                    <rect key="frame" x="0.0" y="49" width="273" height="1"/>
+                                                                    <color key="backgroundColor" name="textColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="Y3W-oi-FjQ"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="08T-u5-07g" userLabel="playerStack2">
+                                                    <rect key="frame" x="0.0" y="55" width="333" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_2" translatesAutoresizingMaskIntoConstraints="NO" id="o9S-DH-MFR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="HqZ-od-cLo"/>
+                                                                <constraint firstAttribute="width" constant="50" id="Rra-mH-9gq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-oD-CW2" userLabel="PLAYER 1">
+                                                            <rect key="frame" x="60" y="0.0" width="273" height="50"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Oyuncu Adı 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-nM-jBX">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="45"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-K8-g6Q">
+                                                                    <rect key="frame" x="0.0" y="49" width="273" height="1"/>
+                                                                    <color key="backgroundColor" name="textColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="ggG-ep-r4f"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qjm-kE-e5d" userLabel="playerStack3">
+                                                    <rect key="frame" x="0.0" y="110" width="333" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_3" translatesAutoresizingMaskIntoConstraints="NO" id="5s2-OG-tTJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="QGI-0c-Lss"/>
+                                                                <constraint firstAttribute="height" constant="50" id="qvd-tm-eke"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-PD-fDD" userLabel="PLAYER 1">
+                                                            <rect key="frame" x="60" y="0.0" width="273" height="50"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Oyuncu Adı 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-Ui-Jaf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="45"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDb-ej-d0W">
+                                                                    <rect key="frame" x="0.0" y="49" width="273" height="1"/>
+                                                                    <color key="backgroundColor" name="textColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="fzU-Vr-eV0"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNd-ms-TcG" userLabel="playerStack4">
+                                                    <rect key="frame" x="0.0" y="165" width="333" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_4" translatesAutoresizingMaskIntoConstraints="NO" id="nO1-q1-Svp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="6Ux-y6-yN8"/>
+                                                                <constraint firstAttribute="width" constant="50" id="r5X-6r-W3W"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="yQA-Fa-YhD" userLabel="PLAYER 1">
+                                                            <rect key="frame" x="60" y="0.0" width="273" height="50"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Oyuncu Adı 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtK-Lf-MLm">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="45"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                    <textInputTraits key="textInputTraits"/>
+                                                                </textField>
+                                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-NP-LhD">
+                                                                    <rect key="frame" x="0.0" y="49" width="273" height="1"/>
+                                                                    <color key="backgroundColor" name="textColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="USe-gh-Uri"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="RA5-bu-gjJ" userLabel="oyun adı">
+                                            <rect key="frame" x="0.0" y="306" width="333" height="32"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Oyun Adı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qng-aO-RId">
+                                                    <rect key="frame" x="0.0" y="0.0" width="333" height="27"/>
+                                                    <color key="textColor" name="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-Zq-JXb">
+                                                    <rect key="frame" x="0.0" y="31" width="333" height="1"/>
+                                                    <color key="backgroundColor" name="textColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="OIM-Qf-kxh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1p-Zc-3od">
+                                            <rect key="frame" x="0.0" y="368" width="333" height="55"/>
+                                            <color key="backgroundColor" name="butonColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="LQ5-UE-T9c"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Oyunu Başlat">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="tOJ-gC-ZBs"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RA5-bu-gjJ" firstAttribute="leading" secondItem="kL6-YY-pap" secondAttribute="leading" id="1cf-z3-ZX3"/>
+                                        <constraint firstAttribute="trailing" secondItem="RA5-bu-gjJ" secondAttribute="trailing" id="Pzh-Qf-47Y"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kL6-YY-pap" secondAttribute="trailing" constant="30" id="7iZ-a4-gpy"/>
+                                <constraint firstItem="kL6-YY-pap" firstAttribute="leading" secondItem="yUp-ZI-vQC" secondAttribute="leading" constant="30" id="ENw-wl-iuW"/>
+                                <constraint firstItem="kL6-YY-pap" firstAttribute="top" secondItem="yUp-ZI-vQC" secondAttribute="top" constant="50" id="k19-gx-zPY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="yUp-ZI-vQC" firstAttribute="top" secondItem="qQy-NK-Zjc" secondAttribute="top" id="1SS-MJ-eAy"/>
+                        <constraint firstAttribute="bottom" secondItem="yUp-ZI-vQC" secondAttribute="bottom" id="ZuJ-ub-ebI"/>
+                        <constraint firstAttribute="trailing" secondItem="yUp-ZI-vQC" secondAttribute="trailing" id="aEw-vA-T5v"/>
+                        <constraint firstItem="yUp-ZI-vQC" firstAttribute="leading" secondItem="qQy-NK-Zjc" secondAttribute="leading" id="hJ1-gA-J1x"/>
+                        <constraint firstItem="yUp-ZI-vQC" firstAttribute="width" secondItem="qQy-NK-Zjc" secondAttribute="width" id="vH8-ah-Yoe"/>
+                        <constraint firstItem="yUp-ZI-vQC" firstAttribute="height" secondItem="qQy-NK-Zjc" secondAttribute="height" id="yam-iB-t3s"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bgcolor"/>
+            <constraints>
+                <constraint firstItem="qQy-NK-Zjc" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="AP4-Ih-Q0h"/>
+                <constraint firstItem="qQy-NK-Zjc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KGk-B7-3cZ"/>
+                <constraint firstItem="qQy-NK-Zjc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cEW-zw-Tq3"/>
+                <constraint firstItem="qQy-NK-Zjc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jXs-72-a2d"/>
+            </constraints>
+            <point key="canvasLocation" x="57.251908396946561" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_1" width="139" height="139"/>
+        <image name="avatar_2" width="140" height="140"/>
+        <image name="avatar_3" width="140" height="139"/>
+        <image name="avatar_4" width="139" height="140"/>
+        <namedColor name="bgcolor">
+            <color red="0.99607843137254903" green="0.97647058823529409" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="butonColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

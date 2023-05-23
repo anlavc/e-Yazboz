@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CabinetGrotesk-Extrabold.otf">
+            <string>CabinetGrotesk-Extrabold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MultiyazbozTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="MultiyazbozTableViewCell" customModule="Yazboz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4Xo-X7-R7w">
+                        <rect key="frame" x="10" y="1" width="308" height="58"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uth-aO-lKJ">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJz-mN-kZW">
+                                        <rect key="frame" x="5.3333333333333348" y="18.333333333333329" width="13.666666666666664" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" name="butonColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nJz-mN-kZW" secondAttribute="trailing" constant="1" id="EqO-hY-INg"/>
+                                    <constraint firstAttribute="width" constant="20" id="P4x-Lf-PnQ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ibe-gq-wcu">
+                                <rect key="frame" x="22" y="0.0" width="286" height="58"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ewl-sk-TVu">
+                                        <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="58"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="232" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1s-9w-fQ7">
+                                                <rect key="frame" x="56.000000000000007" y="18.666666666666668" width="30.333333333333336" height="21.000000000000004"/>
+                                                <fontDescription key="fontDescription" name="CabinetGrotesk-Extrabold" family="Cabinet Grotesk" pointSize="18"/>
+                                                <color key="textColor" red="0.26666668059999998" green="0.26274511220000002" blue="0.2470588088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="l1s-9w-fQ7" firstAttribute="centerY" secondItem="Ewl-sk-TVu" secondAttribute="centerY" id="U2f-6E-7T6"/>
+                                            <constraint firstItem="l1s-9w-fQ7" firstAttribute="centerX" secondItem="Ewl-sk-TVu" secondAttribute="centerX" id="zBY-sW-dbI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vj5-8s-9HQ">
+                                        <rect key="frame" x="143.66666666666663" y="0.0" width="142.33333333333337" height="58"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amF-TW-8Gs">
+                                                <rect key="frame" x="61.000000000000007" y="18.666666666666668" width="20.333333333333336" height="21.000000000000004"/>
+                                                <fontDescription key="fontDescription" name="CabinetGrotesk-Extrabold" family="Cabinet Grotesk" pointSize="18"/>
+                                                <color key="textColor" red="0.26666668059999998" green="0.26274511220000002" blue="0.2470588088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="amF-TW-8Gs" firstAttribute="centerX" secondItem="Vj5-8s-9HQ" secondAttribute="centerX" id="Qhw-hO-bbk"/>
+                                            <constraint firstItem="amF-TW-8Gs" firstAttribute="centerY" secondItem="Vj5-8s-9HQ" secondAttribute="centerY" id="WGN-Em-Qnq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="nJz-mN-kZW" firstAttribute="centerY" secondItem="l1s-9w-fQ7" secondAttribute="centerY" id="Bmc-MG-oUS"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Xo-X7-R7w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="NkO-pP-c6A"/>
+                    <constraint firstAttribute="bottom" secondItem="4Xo-X7-R7w" secondAttribute="bottom" constant="1" id="PJP-fw-2jf"/>
+                    <constraint firstAttribute="trailing" secondItem="4Xo-X7-R7w" secondAttribute="trailing" constant="10" id="SKA-Di-ljp"/>
+                    <constraint firstItem="4Xo-X7-R7w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WTU-3e-cmQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgStack" destination="4Xo-X7-R7w" id="ZQT-NB-AV3"/>
+                <outlet property="lineNumber" destination="nJz-mN-kZW" id="Wil-Qm-DKx"/>
+                <outlet property="team1Point" destination="l1s-9w-fQ7" id="MdM-hP-uOh"/>
+                <outlet property="team2Point" destination="amF-TW-8Gs" id="Z1C-nQ-Vem"/>
+            </connections>
+            <point key="canvasLocation" x="-54.961832061068698" y="17.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="butonColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

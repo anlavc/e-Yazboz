@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE130A922A17862C009F0742 /* LeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE130A902A17862C009F0742 /* LeaderBoardVC.swift */; };
+		EE130A932A17862C009F0742 /* LeaderBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE130A912A17862C009F0742 /* LeaderBoardVC.xib */; };
+		EE67B02B2A1B674600BA2054 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67B0292A1B674600BA2054 /* FoodCell.swift */; };
+		EE67B02C2A1B674600BA2054 /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE67B02A2A1B674600BA2054 /* FoodCell.xib */; };
+		EE7C6EED2A18CB08003C1B0D /* ViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6EEC2A18CB08003C1B0D /* ViewController + Ext.swift */; };
+		EE7DB6992A14B3D300BD448D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6982A14B3D300BD448D /* AppDelegate.swift */; };
+		EE7DB69B2A14B3D300BD448D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB69A2A14B3D300BD448D /* SceneDelegate.swift */; };
+		EE7DB6A02A14B3D300BD448D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB69E2A14B3D300BD448D /* Main.storyboard */; };
+		EE7DB6A32A14B3D300BD448D /* Yazboz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6A12A14B3D300BD448D /* Yazboz.xcdatamodeld */; };
+		EE7DB6A52A14B3D300BD448D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB6A42A14B3D300BD448D /* Assets.xcassets */; };
+		EE7DB6A82A14B3D300BD448D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB6A62A14B3D300BD448D /* LaunchScreen.storyboard */; };
+		EE7DB6BC2A14B8A400BD448D /* SingleGameInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6BA2A14B8A400BD448D /* SingleGameInfoVC.swift */; };
+		EE7DB6BD2A14B8A400BD448D /* SingleGameInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB6BB2A14B8A400BD448D /* SingleGameInfoVC.xib */; };
+		EE7DB6C32A1603C700BD448D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6C22A1603C700BD448D /* Model.swift */; };
+		EE7DB6C62A1604AF00BD448D /* SingleYazbozVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6C42A1604AF00BD448D /* SingleYazbozVC.swift */; };
+		EE7DB6C72A1604AF00BD448D /* SingleYazbozVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB6C52A1604AF00BD448D /* SingleYazbozVC.xib */; };
+		EE7DB6CB2A1604E300BD448D /* MultiYazbozViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6C92A1604E300BD448D /* MultiYazbozViewController.swift */; };
+		EE7DB6CC2A1604E300BD448D /* MultiYazbozViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB6CA2A1604E300BD448D /* MultiYazbozViewController.xib */; };
+		EE7DB6CF2A164DB400BD448D /* yazbozTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7DB6CD2A164DB400BD448D /* yazbozTableViewCell.swift */; };
+		EE7DB6D02A164DB400BD448D /* yazbozTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7DB6CE2A164DB400BD448D /* yazbozTableViewCell.xib */; };
+		EEFE44502A1A454D005197F2 /* MultiyazbozTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE444E2A1A454D005197F2 /* MultiyazbozTableViewCell.swift */; };
+		EEFE44512A1A454D005197F2 /* MultiyazbozTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFE444F2A1A454D005197F2 /* MultiyazbozTableViewCell.xib */; };
+		EEFE44582A1AA1D9005197F2 /* MultiLeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE44562A1AA1D9005197F2 /* MultiLeaderBoardVC.swift */; };
+		EEFE44592A1AA1D9005197F2 /* MultiLeaderBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFE44572A1AA1D9005197F2 /* MultiLeaderBoardVC.xib */; };
+		EEFE445B2A1AA4DA005197F2 /* TableView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE445A2A1AA4DA005197F2 /* TableView + Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE130A902A17862C009F0742 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
+		EE130A912A17862C009F0742 /* LeaderBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardVC.xib; sourceTree = "<group>"; };
+		EE67B0292A1B674600BA2054 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		EE67B02A2A1B674600BA2054 /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
+		EE7C6EEC2A18CB08003C1B0D /* ViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Ext.swift"; sourceTree = "<group>"; };
+		EE7DB6952A14B3D300BD448D /* Yazboz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yazboz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7DB6982A14B3D300BD448D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE7DB69A2A14B3D300BD448D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE7DB69F2A14B3D300BD448D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE7DB6A22A14B3D300BD448D /* Yazboz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yazboz.xcdatamodel; sourceTree = "<group>"; };
+		EE7DB6A42A14B3D300BD448D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7DB6A72A14B3D300BD448D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE7DB6A92A14B3D300BD448D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7DB6BA2A14B8A400BD448D /* SingleGameInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGameInfoVC.swift; sourceTree = "<group>"; };
+		EE7DB6BB2A14B8A400BD448D /* SingleGameInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleGameInfoVC.xib; sourceTree = "<group>"; };
+		EE7DB6C22A1603C700BD448D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EE7DB6C42A1604AF00BD448D /* SingleYazbozVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleYazbozVC.swift; sourceTree = "<group>"; };
+		EE7DB6C52A1604AF00BD448D /* SingleYazbozVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleYazbozVC.xib; sourceTree = "<group>"; };
+		EE7DB6C92A1604E300BD448D /* MultiYazbozViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiYazbozViewController.swift; sourceTree = "<group>"; };
+		EE7DB6CA2A1604E300BD448D /* MultiYazbozViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiYazbozViewController.xib; sourceTree = "<group>"; };
+		EE7DB6CD2A164DB400BD448D /* yazbozTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yazbozTableViewCell.swift; sourceTree = "<group>"; };
+		EE7DB6CE2A164DB400BD448D /* yazbozTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = yazbozTableViewCell.xib; sourceTree = "<group>"; };
+		EEFE444E2A1A454D005197F2 /* MultiyazbozTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiyazbozTableViewCell.swift; sourceTree = "<group>"; };
+		EEFE444F2A1A454D005197F2 /* MultiyazbozTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiyazbozTableViewCell.xib; sourceTree = "<group>"; };
+		EEFE44562A1AA1D9005197F2 /* MultiLeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLeaderBoardVC.swift; sourceTree = "<group>"; };
+		EEFE44572A1AA1D9005197F2 /* MultiLeaderBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiLeaderBoardVC.xib; sourceTree = "<group>"; };
+		EEFE445A2A1AA4DA005197F2 /* TableView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView + Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE7DB6922A14B3D300BD448D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE7DB68C2A14B3D200BD448D = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6972A14B3D300BD448D /* Yazboz */,
+				EE7DB6962A14B3D300BD448D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE7DB6962A14B3D300BD448D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6952A14B3D300BD448D /* Yazboz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE7DB6972A14B3D300BD448D /* Yazboz */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6B42A14B75400BD448D /* Application */,
+				EE7DB6B32A14B74300BD448D /* Extensions */,
+				EE7DB6B22A14B73700BD448D /* Storyboard */,
+				EE7DB6B12A14B73000BD448D /* Model */,
+				EE7DB6B02A14B71500BD448D /* Resources */,
+				EE7DB6AF2A14B6F900BD448D /* Controller */,
+				EE7DB6B52A14B78900BD448D /* Views */,
+				EE7DB6A12A14B3D300BD448D /* Yazboz.xcdatamodeld */,
+			);
+			path = Yazboz;
+			sourceTree = "<group>";
+		};
+		EE7DB6AF2A14B6F900BD448D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6BA2A14B8A400BD448D /* SingleGameInfoVC.swift */,
+				EE7DB6BB2A14B8A400BD448D /* SingleGameInfoVC.xib */,
+				EEFE44532A1A47D4005197F2 /* Multi */,
+				EEFE44522A1A47C2005197F2 /* Single */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE7DB6B02A14B71500BD448D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6A92A14B3D300BD448D /* Info.plist */,
+				EE7DB6A42A14B3D300BD448D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE7DB6B12A14B73000BD448D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6C22A1603C700BD448D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7DB6B22A14B73700BD448D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB69E2A14B3D300BD448D /* Main.storyboard */,
+				EE7DB6A62A14B3D300BD448D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EE7DB6B32A14B74300BD448D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C6EEC2A18CB08003C1B0D /* ViewController + Ext.swift */,
+				EEFE445A2A1AA4DA005197F2 /* TableView + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE7DB6B42A14B75400BD448D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6982A14B3D300BD448D /* AppDelegate.swift */,
+				EE7DB69A2A14B3D300BD448D /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EE7DB6B52A14B78900BD448D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEFE44552A1A47E7005197F2 /* Multi */,
+				EEFE44542A1A47E2005197F2 /* Single */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEFE44522A1A47C2005197F2 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6C42A1604AF00BD448D /* SingleYazbozVC.swift */,
+				EE7DB6C52A1604AF00BD448D /* SingleYazbozVC.xib */,
+				EE130A902A17862C009F0742 /* LeaderBoardVC.swift */,
+				EE130A912A17862C009F0742 /* LeaderBoardVC.xib */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		EEFE44532A1A47D4005197F2 /* Multi */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6C92A1604E300BD448D /* MultiYazbozViewController.swift */,
+				EE7DB6CA2A1604E300BD448D /* MultiYazbozViewController.xib */,
+				EEFE44562A1AA1D9005197F2 /* MultiLeaderBoardVC.swift */,
+				EEFE44572A1AA1D9005197F2 /* MultiLeaderBoardVC.xib */,
+			);
+			name = Multi;
+			path = "mULTİ";
+			sourceTree = "<group>";
+		};
+		EEFE44542A1A47E2005197F2 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				EE7DB6CD2A164DB400BD448D /* yazbozTableViewCell.swift */,
+				EE7DB6CE2A164DB400BD448D /* yazbozTableViewCell.xib */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		EEFE44552A1A47E7005197F2 /* Multi */ = {
+			isa = PBXGroup;
+			children = (
+				EEFE444E2A1A454D005197F2 /* MultiyazbozTableViewCell.swift */,
+				EEFE444F2A1A454D005197F2 /* MultiyazbozTableViewCell.xib */,
+				EE67B0292A1B674600BA2054 /* FoodCell.swift */,
+				EE67B02A2A1B674600BA2054 /* FoodCell.xib */,
+			);
+			path = Multi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE7DB6942A14B3D300BD448D /* Yazboz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7DB6AC2A14B3D300BD448D /* Build configuration list for PBXNativeTarget "Yazboz" */;
+			buildPhases = (
+				EE7DB6912A14B3D200BD448D /* Sources */,
+				EE7DB6922A14B3D300BD448D /* Frameworks */,
+				EE7DB6932A14B3D300BD448D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yazboz;
+			productName = Yazboz;
+			productReference = EE7DB6952A14B3D300BD448D /* Yazboz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE7DB68D2A14B3D200BD448D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EE7DB6942A14B3D300BD448D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = EE7DB6902A14B3D200BD448D /* Build configuration list for PBXProject "Yazboz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE7DB68C2A14B3D200BD448D;
+			productRefGroup = EE7DB6962A14B3D300BD448D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE7DB6942A14B3D300BD448D /* Yazboz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE7DB6932A14B3D300BD448D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE130A932A17862C009F0742 /* LeaderBoardVC.xib in Resources */,
+				EE7DB6C72A1604AF00BD448D /* SingleYazbozVC.xib in Resources */,
+				EE7DB6A82A14B3D300BD448D /* LaunchScreen.storyboard in Resources */,
+				EE7DB6A52A14B3D300BD448D /* Assets.xcassets in Resources */,
+				EE7DB6CC2A1604E300BD448D /* MultiYazbozViewController.xib in Resources */,
+				EE7DB6D02A164DB400BD448D /* yazbozTableViewCell.xib in Resources */,
+				EEFE44592A1AA1D9005197F2 /* MultiLeaderBoardVC.xib in Resources */,
+				EEFE44512A1A454D005197F2 /* MultiyazbozTableViewCell.xib in Resources */,
+				EE67B02C2A1B674600BA2054 /* FoodCell.xib in Resources */,
+				EE7DB6BD2A14B8A400BD448D /* SingleGameInfoVC.xib in Resources */,
+				EE7DB6A02A14B3D300BD448D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE7DB6912A14B3D200BD448D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEFE445B2A1AA4DA005197F2 /* TableView + Ext.swift in Sources */,
+				EE7DB6BC2A14B8A400BD448D /* SingleGameInfoVC.swift in Sources */,
+				EE7DB6992A14B3D300BD448D /* AppDelegate.swift in Sources */,
+				EE7DB6C32A1603C700BD448D /* Model.swift in Sources */,
+				EEFE44502A1A454D005197F2 /* MultiyazbozTableViewCell.swift in Sources */,
+				EE7DB6A32A14B3D300BD448D /* Yazboz.xcdatamodeld in Sources */,
+				EE7DB6CB2A1604E300BD448D /* MultiYazbozViewController.swift in Sources */,
+				EE130A922A17862C009F0742 /* LeaderBoardVC.swift in Sources */,
+				EE7DB69B2A14B3D300BD448D /* SceneDelegate.swift in Sources */,
+				EE67B02B2A1B674600BA2054 /* FoodCell.swift in Sources */,
+				EEFE44582A1AA1D9005197F2 /* MultiLeaderBoardVC.swift in Sources */,
+				EE7DB6CF2A164DB400BD448D /* yazbozTableViewCell.swift in Sources */,
+				EE7C6EED2A18CB08003C1B0D /* ViewController + Ext.swift in Sources */,
+				EE7DB6C62A1604AF00BD448D /* SingleYazbozVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE7DB69E2A14B3D300BD448D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7DB69F2A14B3D300BD448D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE7DB6A62A14B3D300BD448D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7DB6A72A14B3D300BD448D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE7DB6AA2A14B3D300BD448D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE7DB6AB2A14B3D300BD448D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE7DB6AD2A14B3D300BD448D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74UL9K89V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yazboz/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "e-Yazboz";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilavci.Yazboz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE7DB6AE2A14B3D300BD448D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74UL9K89V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yazboz/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "e-Yazboz";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anilavci.Yazboz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE7DB6902A14B3D200BD448D /* Build configuration list for PBXProject "Yazboz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7DB6AA2A14B3D300BD448D /* Debug */,
+				EE7DB6AB2A14B3D300BD448D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7DB6AC2A14B3D300BD448D /* Build configuration list for PBXNativeTarget "Yazboz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7DB6AD2A14B3D300BD448D /* Debug */,
+				EE7DB6AE2A14B3D300BD448D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE7DB6A12A14B3D300BD448D /* Yazboz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE7DB6A22A14B3D300BD448D /* Yazboz.xcdatamodel */,
+			);
+			currentVersion = EE7DB6A22A14B3D300BD448D /* Yazboz.xcdatamodel */;
+			path = Yazboz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE7DB68D2A14B3D200BD448D /* Project object */;
+}
